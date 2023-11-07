@@ -5,3 +5,7 @@ Each Week, each member will give an update on what is done for that week.
 Jared Onsager
 
 Example of what I did for this week.
+
+11/7/23
+
+Logan Taylor

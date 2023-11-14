@@ -9,3 +9,8 @@ Example of what I did for this week.
 11/7/23
 
 Logan Taylor
+
+//Notes:
+
+Useful Git Commands:
+git checkout branch name, allows you to select what branch you want to work in.

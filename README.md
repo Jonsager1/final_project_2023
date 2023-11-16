@@ -12,5 +12,11 @@ Logan Taylor
 
 //Notes:
 
+11/16/23
+
+Nathan Arias
+
+
+
 Useful Git Commands:
 git checkout branch name, allows you to select what branch you want to work in.

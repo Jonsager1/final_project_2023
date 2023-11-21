@@ -17,6 +17,10 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 li,
 nav,
 label {
@@ -61,6 +65,16 @@ button:hover {
 
 main p {
     text-align: center;
-    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    padding: 2% 15%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
     font-family: 'Inter', sans-serif;
 }

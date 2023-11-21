@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../design-files/main-menu.css">
+    <link rel="stylesheet" href="../../design-files/main-menu.css" />
     <link rel="stylesheet" href="../../design-files/translate.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <title>Translation App</title>
   </head>
+
   <body>
     <header>
       <label name="appTitle">Translation Studio</label>
       <nav>
         <ul class="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Translate</a></li>
+          <li><a href="../main-menu/index.html">Home</a></li>
+          <li><a href="../translate-menu/index.html">Translate</a></li>
           <li><a href="#">Add Question</a></li>
           <li><a href="#">Take Quiz</a></li>
         </ul>
@@ -22,57 +27,38 @@
     </header>
 
     <main>
-      <div>
-        <h3 id="bodyTitle">Welcome! About Us</h3>
-      </div>
-
-      <div>
-        <p>
+      <div class="container">
+        <h3 id="translationLabel">
           Welcome! We Have All The Answers To Your Translations Needs!!
-        </p>
+        </h3>
 
-        <p>
-          Enter Your Translations Into The Box Below!!
-        </p>
+        <div id="translate">
+          <h4>Enter Your Translations Into The Box Below!!</h4>
+          <div id="translationInputs">
+            <textarea
+              name="Input"
+              id="textInput"
+              cols="30"
+              rows="10"
+              placeholder="Enter Text"
+            ></textarea>
 
-        <style>
-          textarea {
-            width: 100%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border-radius: 4px;
-            font-size: 16px;
-            resize: none;
-          }
-          </style>
-          
-          <h2>Start Translation</h2>
-          
-          
-          <form>
-            <textarea>Text Here...</textarea>
-          </form>
-
-        <style>
-          textarea {
-            width: 100%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border-radius: 4px;
-            font-size: 16px;
-            resize: none;
-          }
-          </style>
-          
-          <h2>Translation Results</h2>
-          
-          
-          <form>
-            <textarea>Translation...</textarea>
-          </form>
+            <textarea
+              name="Output"
+              placeholder="Translation"
+              id="textOutput"
+              cols="30"
+              rows="10"
+              readonly
+              disabled
+            ></textarea>
+          </div>
+        </div>
       </div>
     </main>
+
+    <footer id="footer">
+      <p>Authors: Logan, Nathan and Jared</p>
+    </footer>
   </body>
 </html>

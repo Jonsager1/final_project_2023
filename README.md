@@ -16,7 +16,7 @@ Logan Taylor
 
 Nathan Arias
 
-
+Wrote the ui for the translation portion of the project and did a bit of css on the website.
 
 Useful Git Commands:
 git checkout branch name, allows you to select what branch you want to work in.

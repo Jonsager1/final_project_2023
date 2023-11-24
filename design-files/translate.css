@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -11,30 +9,73 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    background-color: white;
+main {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .container {
-    background-color: lightgray;
+    width: 1000px;
+    height: 400px;
+    background-color: aliceblue;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translationCard { 
     width: 100%;
-    max-width: 700px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
 }
 
-.container h3 {
+.translationCard h4 { 
     text-align: center;
-
 }
 
-.container h4 {
-    text-align: center;
-    display: flexbox;
+.translationCard .selectionBar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
 }
 
-#translationInputs {
-    padding-left: 70px;
-    padding-top: 10px;
+.selectionBar li select {
+    outline: none;
+    border-style: none;
+    padding: 15px;
+    font: 24px;
+    background-color: aliceblue;
+}
+
+.userInputs{
+    margin-top: 20px;
+    display: flex;
+}
+
+.inputTxt, .outputTxt {
+    margin: 2%;
+    width: 100%;
+    max-height: 200px;
+    min-width: 450px;
+    max-width: 500px;
+}
+
+#btnTranslateTxt{
+    margin: 15px 425px ;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }

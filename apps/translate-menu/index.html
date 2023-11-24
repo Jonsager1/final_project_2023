@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../design-files/main-menu.css" />
     <link rel="stylesheet" href="../../design-files/translate.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../translate-menu/main.js"></script>
     <title>Translation App</title>
   </head>
 
@@ -28,30 +26,35 @@
 
     <main>
       <div class="container">
-        <h3 id="translationLabel">
-          Welcome! We Have All The Answers To Your Translations Needs!!
-        </h3>
+        <div class="translationCard">
+          <h4>Welcome! We Have All The Answers To Your Translations Needs!!</h4>
+          <div>
+            <ul class="selectionBar">
+              <li>
+                <select name="detectedLanguage" class="dropDectectedLang">
+                  <option value="en-GB">English</option>
+                  <option value="en-GB">English</option>
+                  <option value="en-GB">English</option>
+                </select>
+              </li>
+              <li><span class="material-symbols-outlined">sync_alt</span></li>
+              <li>
+                <select name="detectedLanguage" class="dropDectectedLang">
+                  <option value="en-GB">English</option>
+                  <option value="en-GB">English</option>
+                  <option value="en-GB">English</option>
+                </select>
+              </li>
+            </ul>
+          </div>
 
-        <div id="translate">
-          <h4>Enter Your Translations Into The Box Below!!</h4>
-          <div id="translationInputs">
-            <textarea
-              name="Input"
-              id="textInput"
-              cols="30"
-              rows="10"
-              placeholder="Enter Text"
-            ></textarea>
+          <div class="userInputs">
+            <textarea name="inputText" class="inputTxt" cols="30" rows="10"></textarea>
+            <textarea name="outputText" class="outputTxt" cols="30" rows="10"></textarea>
+          </div>
 
-            <textarea
-              name="Output"
-              placeholder="Translation"
-              id="textOutput"
-              cols="30"
-              rows="10"
-              readonly
-              disabled
-            ></textarea>
+          <div>
+            <button id="btnTranslateTxt">Translate Text</button>
           </div>
         </div>
       </div>

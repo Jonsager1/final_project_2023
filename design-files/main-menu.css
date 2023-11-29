@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 30px 10%;
-    background-color: lightgray;
+    background-color: #CAD9E3;
     align-items: center;
     font-family: 'Inter', sans-serif;
 }
@@ -74,7 +74,7 @@ footer {
     left: 0;
     bottom: 0px;
     width: 100%;
-    background-color: lightgray;
+    background-color: #CAD9E3;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }

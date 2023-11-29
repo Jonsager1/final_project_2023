@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../../design-files/translate.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="../translate-menu/main.js"></script>
+    <script src="countries.js"></script>
     <title>Translation App</title>
   </head>
 
-  <body>
+  <body onload="onStart()">
     <header>
       <label name="appTitle">Translation Studio</label>
       <nav>
@@ -29,33 +30,17 @@
         <div class="translationCard">
           <h4>Welcome! We Have All The Answers To Your Translations Needs!!</h4>
           <div>
-            <ul class="selectionBar">
-              <li>
-                <select name="detectedLanguage" class="dropDectectedLang">
-                  <option value="en-GB">English</option>
-                  <option value="en-GB">English</option>
-                  <option value="en-GB">English</option>
-                </select>
-              </li>
-              <li><span class="material-symbols-outlined">sync_alt</span></li>
-              <li>
-                <select name="detectedLanguage" class="dropDectectedLang">
-                  <option value="en-GB">English</option>
-                  <option value="en-GB">English</option>
-                  <option value="en-GB">English</option>
-                </select>
-              </li>
-            </ul>
-          </div>
+            <div id="translationNavBar">
 
-          <div class="userInputs">
-            <textarea name="inputText" class="inputTxt" cols="30" rows="10"></textarea>
-            <textarea name="outputText" class="outputTxt" cols="30" rows="10"></textarea>
-          </div>
+            </div>
+            <div class="userInputs">
+              <textarea name="inputText" id="userInputtedTxt" cols="30" rows="10" placeholder="Enter A Value"></textarea>
+              <textarea name="outputText" id="translatedTxt" cols="30" rows="10" readonly placeholder="Outputted Value"></textarea>
+            </div>
 
-          <div>
-            <button id="btnTranslateTxt">Translate Text</button>
-          </div>
+            <div>
+              <button id="btnTranslateTxt" onclick="startTranslation()">Translate Text</button>
+            </div>
         </div>
       </div>
     </main>

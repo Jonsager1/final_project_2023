@@ -8,6 +8,14 @@
     list-style: none;
 }
 
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(80, 160, 200);
+    height: 100%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -15,14 +23,13 @@ header {
     background-color: #CAD9E3;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-}
 
 li,
 nav,
+
 label {
     font-size: 20px;
 }

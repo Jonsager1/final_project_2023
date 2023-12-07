@@ -1,2 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 160, 200);
+    height: 100%;
+
+}
+
+
+.container {
+    width: 1000px;
+    height: 400px;
+    background-color: #CAD9E3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translationCard {
+    width: 100%;
+}
+
+.translationCard h4 {
+    text-align: center;
+}
+
+.translationCard .selectionBar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+.selectionBar li select {
+    outline: none;
+    border-style: none;
+    padding: 15px;
+    font: 24px;
+    background-color: aliceblue;
+}
+
+.userInputs {
+    margin-top: 20px;
+    display: flex;
+}
+
+#userInputtedTxt,
+#translatedTxt {
+    margin: 2%;
+    width: 100%;
+    max-height: 200px;
+    min-width: 450px;
+    max-width: 500px;
+}
+
+#btnTranslateTxt {
+    margin: 15px 425px;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}

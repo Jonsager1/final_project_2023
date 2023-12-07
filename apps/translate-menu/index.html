@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../design-files/main-menu.css">
+    <link rel="stylesheet" href="../../design-files/main-menu.css" />
     <link rel="stylesheet" href="../../design-files/translate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../translate-menu/main.js"></script>
+    <script src="countries.js"></script>
     <title>Translation App</title>
   </head>
-  <body>
+
+  <body onload="onStart()">
     <header>
       <label name="appTitle">Translation Studio</label>
       <nav>
         <ul class="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Translate</a></li>
+          <li><a href="../main-menu/index.html">Home</a></li>
+          <li><a href="../translate-menu/index.html">Translate</a></li>
           <li><a href="#">Add Question</a></li>
           <li><a href="#">Take Quiz</a></li>
         </ul>
@@ -22,57 +26,28 @@
     </header>
 
     <main>
-      <div>
-        <h3 id="bodyTitle">Welcome! About Us</h3>
-      </div>
+      <div class="container">
+        <div class="translationCard">
+          <h4>Welcome! We Have All The Answers To Your Translations Needs!!</h4>
+          <div>
+            <div id="translationNavBar">
 
-      <div>
-        <p>
-          Welcome! We Have All The Answers To Your Translations Needs!!
-        </p>
+            </div>
+            <div class="userInputs">
+              <textarea name="inputText" id="userInputtedTxt" cols="30" rows="10" placeholder="Enter A Value"></textarea>
+              <textarea name="outputText" id="translatedTxt" cols="30" rows="10" readonly placeholder="Outputted Value"></textarea>
+            </div>
+            
+            <div>
+              <button id="btnTranslateTxt" onclick="startTranslation()">Translate Text</button>
+            </div>
 
-        <p>
-          Enter Your Translations Into The Box Below!!
-        </p>
-
-        <style>
-          textarea {
-            width: 100%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border-radius: 4px;
-            font-size: 16px;
-            resize: none;
-          }
-          </style>
-          
-          <h2>Start Translation</h2>
-          
-          
-          <form>
-            <textarea>Text Here...</textarea>
-          </form>
-
-        <style>
-          textarea {
-            width: 100%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border-radius: 4px;
-            font-size: 16px;
-            resize: none;
-          }
-          </style>
-          
-          <h2>Translation Results</h2>
-          
-          
-          <form>
-            <textarea>Translation...</textarea>
-          </form>
+        </div>
       </div>
     </main>
+
+    <footer id="footer">
+      <p>Authors: Logan, Nathan and Jared</p>
+    </footer>
   </body>
 </html>

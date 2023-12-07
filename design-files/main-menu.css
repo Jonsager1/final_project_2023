@@ -8,17 +8,28 @@
     list-style: none;
 }
 
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(80, 160, 200);
+    height: 100%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 30px 10%;
-    background-color: lightgray;
+    background-color: #CAD9E3;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    
 }
+
 
 li,
 nav,
+
 label {
     font-size: 20px;
 }
@@ -61,6 +72,16 @@ button:hover {
 
 main p {
     text-align: center;
-    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    padding: 2% 15%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: #CAD9E3;
+    text-align: center;
     font-family: 'Inter', sans-serif;
 }

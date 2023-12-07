@@ -44,4 +44,7 @@ Tried to get a background image for the whole website but it didn't work even th
 
 I tried to help with the API but got told the API was not able to be salvaged before the presentation
 
-Did quality assurance test for the quiz portion for any issues and found none.Created the Presentation slides for our presentation on thursday the 7th of December
+Did quality assurance test for the quiz portion for any issues and found none.Created the Presentation slides for our presentation on thursday the 7th of December.
+
+11/25/23 - 12/6/23
+During this period of time, we continued to try to connect the api to our project. However, we ran out of time and were not able to connect it. Afterwards, I help team members wrap up final touches and tested the application.
